@@ -10,7 +10,8 @@
 # Importation de la librairie
 import tkinter as tk
 
-
+###############
+# programme principale
 racine = tk.Tk()
 racine.title("tas de sable")
 canvas = tk.Canvas(racine, width=600, height=600)
