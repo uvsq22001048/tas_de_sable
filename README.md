@@ -7,6 +7,6 @@ projet tas de sable
 # Laetitia SALE
 # Louis REBÊCHE
 # Lou GUEVEL
-# https://githup.com/uvsq-info/l1-python
+# https://github.com/uvsq-info/l1-python
 ###########################
 
