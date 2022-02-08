@@ -6,6 +6,7 @@ projet tas de sable
 # ceylia DUPIN
 # Laetitia SALE
 # Louis REBÊCHE
-#
+# Lou GUEVEL
 # https://githup.com/uvsq-info/l1-python
 ###########################
+
