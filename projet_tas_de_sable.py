@@ -22,28 +22,24 @@ HEIGHT = 500
 WIDTH = 500
 largeur_case = WIDTH // 3
 hauteur_case = HEIGHT // 3
-
-tas_de_sable = [[0 for x in range(5)]for y in range(5)]
-tas_de_sable [0][0] = ""
-tas_de_sable [0][1] = "#"
-tas_de_sable [0][2] = "#"
-tas_de_sable [0][3] = "#"
-tas_de_sable [0][4] = ""
-
-tas_de_sable [1][0] = "#"
-tas_de_sable [1][4] ="#"
-
-tas_de_sable [2][0] = "#"
-tas_de_sable [2][4] = "#"
-
-tas_de_sable [3][0] ="#"
-tas_de_sable [3][4] ="#"
-
-tas_de_sable [4][0] = ""
-tas_de_sable [4][1] = "#"
-tas_de_sable [4][2] = "#"
-tas_de_sable [4][3] = "#"
-tas_de_sable [4][4] = ""
+class tas_de_sable:
+    tas_de_sable = [[0 for x in range(5)]for y in range(5)]
+    tas_de_sable [0][0] = ""
+    tas_de_sable [0][1] = "#"
+    tas_de_sable [0][2] = "#"
+    tas_de_sable [0][3] = "#"
+    tas_de_sable [0][4] = ""
+    tas_de_sable [1][0] = "#"
+    tas_de_sable [1][4] ="#"
+    tas_de_sable [2][0] = "#"
+    tas_de_sable [2][4] = "#"
+    tas_de_sable [3][0] ="#"
+    tas_de_sable [3][4] ="#"
+    tas_de_sable [4][0] = ""
+    tas_de_sable [4][1] = "#"
+    tas_de_sable [4][2] = "#"
+    tas_de_sable [4][3] = "#"
+    tas_de_sable [4][4] = ""
 
 "pas terminer"
 #canevas
