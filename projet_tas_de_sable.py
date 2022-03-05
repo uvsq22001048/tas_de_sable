@@ -22,26 +22,27 @@ HEIGHT = 500
 WIDTH = 500
 largeur_case = WIDTH // 3
 hauteur_case = HEIGHT // 3
-class tas_de_sable:
-    tas_de_sable = [[0 for x in range(5)]for y in range(5)]
-    tas_de_sable [0][0] = ""
-    tas_de_sable [0][1] = "#"
-    tas_de_sable [0][2] = "#"
-    tas_de_sable [0][3] = "#"
-    tas_de_sable [0][4] = ""
-    tas_de_sable [1][0] = "#"
-    tas_de_sable [1][4] ="#"
-    tas_de_sable [2][0] = "#"
-    tas_de_sable [2][4] = "#"
-    tas_de_sable [3][0] ="#"
-    tas_de_sable [3][4] ="#"
-    tas_de_sable [4][0] = ""
-    tas_de_sable [4][1] = "#"
-    tas_de_sable [4][2] = "#"
-    tas_de_sable [4][3] = "#"
-    tas_de_sable [4][4] = ""
 
-"pas terminer"
+#class tas_de_sable:
+tas_de_sable = [[0] * 5 for x in range(5)]
+tas_de_sable [0][0] = ""
+tas_de_sable [0][1] = "#"
+tas_de_sable [0][2] = "#"
+tas_de_sable [0][3] = "#"
+tas_de_sable [0][4] = ""
+tas_de_sable [1][0] = "#"
+tas_de_sable [1][4] ="#"
+tas_de_sable [2][0] = "#"
+tas_de_sable [2][4] = "#"
+tas_de_sable [3][0] ="#"
+tas_de_sable [3][4] ="#"
+tas_de_sable [4][0] = ""
+tas_de_sable [4][1] = "#"
+tas_de_sable [4][2] = "#"
+tas_de_sable [4][3] = "#"
+tas_de_sable [4][4] = ""
+
+#pas terminer"
 #canevas
 racine = tk.Tk()
 racine.title("tas de sable")
@@ -59,14 +60,30 @@ for i in range(3):
 
 
 
-# creation d'un bouton
+# création d'un bouton afin de créer la configuration aléatoire
+# lorsque le bouton "configuration" est cliqué 
+# le tableau "tas_de_sable" est initialisé avec une de la configuration aléatoire
+# 
+for i in range (1, 3):
+    for j in range (1, 3):
+        tas_de_sable [1][1] = randint(0, 6)
+        tas_de_sable [1][2] = randint(0, 6)
+        tas_de_sable [1][3] = randint(0, 6)
+        tas_de_sable [2][1] = randint(0, 6)
+        tas_de_sable [2][2] = randint(0, 6)
+        tas_de_sable [2][3] = randint(0, 6)
+        tas_de_sable [3][1] = randint(0, 6)
+        tas_de_sable [3][2] = randint(0, 6)
+        tas_de_sable [3][3] = randint(0, 6)
+
 btn = Button(racine, text="configuration")
 btn.n = canvas.create_window(550, 300, window=btn)
 
+# création d'un bouton pour déclencher l'avalanche
 btn_2 = Button(racine,text= "faire une avalanche" )
 btn_2.n = canvas.create_window (550, 400, window= btn_2)
 # création d'une variable
-
+print(tas_de_sable)
 "n = random.randint(0,10) "
 "a utiliser dans le bouton 2 plus tard "
 
