@@ -9,7 +9,7 @@
 ##########
 # Importation de la librairie
 "from curses import BUTTON2_DOUBLE_CLICKED"
-"on ma dit de le garder car on pourrais en avoir besoin plus tard"
+" apparu je ne sais pas comment ,on ma dit de le garder au cas ou"
 import tkinter as tk
 from tkinter import * 
 from random import *
@@ -43,38 +43,41 @@ tas_de_sable [4][3] = "#"
 tas_de_sable [4][4] = ""
 
 #pas terminer"
+
+
 #canevas
 racine = tk.Tk()
 racine.title("tas de sable")
 canvas = tk.Canvas(racine, width=600, height=600)
 canvas.grid(column=0, row=0)
 canvas.grid()
-for i in range(3):
-    for j in range(3):
-        if (i+j) % 2 == 0:
-            color = "white"
-        else:
-            color = "white"
-        canvas.create_rectangle((i*largeur_case, j*hauteur_case),
-                ((i+1)*largeur_case, (j+1)*hauteur_case), fill=color)
-
 
 
 # création d'un bouton afin de créer la configuration aléatoire
 # lorsque le bouton "configuration" est cliqué 
 # le tableau "tas_de_sable" est initialisé avec une de la configuration aléatoire
 # 
-for i in range (1, 3):
-    for j in range (1, 3):
-        tas_de_sable [1][1] = randint(0, 6)
-        tas_de_sable [1][2] = randint(0, 6)
-        tas_de_sable [1][3] = randint(0, 6)
-        tas_de_sable [2][1] = randint(0, 6)
-        tas_de_sable [2][2] = randint(0, 6)
-        tas_de_sable [2][3] = randint(0, 6)
-        tas_de_sable [3][1] = randint(0, 6)
-        tas_de_sable [3][2] = randint(0, 6)
-        tas_de_sable [3][3] = randint(0, 6)
+
+tas_de_sable [1][1] = randint(0, 4)
+tas_de_sable [1][2] = randint(0, 4)
+tas_de_sable [1][3] = randint(0, 4)
+tas_de_sable [2][1] = randint(0, 4)
+tas_de_sable [2][2] = randint(0, 4)
+tas_de_sable [2][3] = randint(0, 4)
+tas_de_sable [3][1] = randint(0, 4)
+tas_de_sable [3][2] = randint(0, 4)
+tas_de_sable [3][3] = randint(0, 4)
+col = "white"
+
+###
+for i in range (1,4):
+    for j in range (1, 4):
+        if tas_de_sable [i][j] == 1:
+            col = "yellow"
+        else:
+            col = "white"
+        canvas.create_rectangle(((j-1)*largeur_case, (i-1)*hauteur_case),
+                ((j)*largeur_case, (i)*hauteur_case), fill=col)
 
 btn = Button(racine, text="configuration")
 btn.n = canvas.create_window(550, 300, window=btn)
