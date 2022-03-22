@@ -87,8 +87,7 @@ btn_2 = Button(racine,text= "faire une avalanche" )
 btn_2.n = canvas.create_window (550, 400, window= btn_2)
 # création d'une variable
 print(tas_de_sable)
-"n = random.randint(0,10) "
-"a utiliser dans le bouton 2 plus tard "
+
 
 
 
